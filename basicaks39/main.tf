@@ -29,10 +29,7 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
     os_type         = "Linux"
   }
 
-  service_principal {
-    client_id     = "YOUR_APP_ID"
-    client_secret = "YOUR_APP_SECRET"
-  }
+
 
   network_profile {
     network_plugin = "azure"
